@@ -18,6 +18,8 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 
+/*mobile version*/
+
 .page {
   width: 375px;
   height: 709px;
@@ -33,13 +35,20 @@ body {
   border-radius: 20px;
 }
 
+.intro {
+  margin: 0 32px 24px;
+}
+
 .listening__music {
+  display: block;
   height: 160px;
   width: 327px;
-  margin-bottom: 32px;
   border-radius: 20px 20px 0 0;
 }
 
+.container {
+  padding: 32px 0;
+}
 .container h1 {
   font-family: Red Hat Display;
   font-size: 22px;
@@ -60,7 +69,6 @@ body {
   line-height: 167%;
   text-align: center;
   color: #717fa6;
-  margin-bottom: 24px;
 }
 
 .payment {
@@ -117,7 +125,16 @@ a {
   margin: 16px 0 15px;
 }
 
+.change:hover {
+  color: #766cf1;
+}
+
+.btn {
+  margin: 0 24px;
+}
+
 button {
+  display: block;
   border: 0;
   outline: 0;
   font-weight: 900;
@@ -135,9 +152,24 @@ button {
   margin-bottom: 24px;
 }
 
+.btn__proceed:hover {
+  background-color: #766cf1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
 .btn__cancel {
   color: #717fa6;
   background-color: inherit;
+  margin: 0 auto;
+}
+
+.btn__cancel:hover {
+  color: #1f2e55;
+}
+
+.btn__cancel,
+.btn__proceed {
+  cursor: pointer;
 }
 
 .attribution {
@@ -147,4 +179,75 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* desktop version*/
+
+@media screen and (min-width: 376px) {
+  .page {
+    width: 1440px;
+    height: 900px;
+  }
+
+  .main {
+    width: 450px;
+    height: 697px;
+    left: 496px;
+    top: 102px;
+  }
+
+  .intro {
+  }
+
+  .listening__music {
+    width: 450px;
+    height: 220px;
+  }
+
+  .container {
+    padding: 45px 48px 60px;
+  }
+
+  .container h1 {
+    font-size: 37px;
+    line-height: 37px;
+    margin-bottom: 17px;
+  }
+
+  .container p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .intro {
+    margin: 0 0 20px;
+  }
+
+  .payment {
+    width: 354px;
+    height: 98px;
+    padding: 25px 24px;
+    margin: 0 0 20px;
+  }
+
+  .payment img {
+    margin-right: 20px;
+  }
+
+  .annual_plan {
+    margin-right: 94px;
+  }
+
+  .change {
+    font-size: 14px;
+  }
+
+  .btn {
+    margin: 0;
+  }
+  .btn__proceed {
+    width: 354px;
+    height: 50px;
+    margin-bottom: 32px;
+  }
 }
