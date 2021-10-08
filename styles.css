@@ -25,6 +25,7 @@ body {
   height: 709px;
   padding: 71px 24px;
   background-color: #e0e8ff;
+  position: relative;
 }
 
 .main {
@@ -181,9 +182,10 @@ button {
   }
 
   .main {
+    position: absolute;
     width: 450px;
     height: 697px;
-    left: 496px;
+    left: 495px;
     top: 102px;
   }
 
